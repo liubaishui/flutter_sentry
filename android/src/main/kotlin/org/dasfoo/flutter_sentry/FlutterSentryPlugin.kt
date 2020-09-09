@@ -41,7 +41,7 @@ class FlutterSentryPlugin : FlutterPlugin, MethodCallHandler {
         @Suppress("unused")
         fun registerWith(registrar: Registrar) {
             val plugin = FlutterSentryPlugin()
-            channel.setMethodCallHandler(FlutterSentryPlugin())	            plugin.setup(registrar.context(), registrar.messenger())
+            plugin.setup(registrar.context(), registrar.messenger())
         }
     }
 
