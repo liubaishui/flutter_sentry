@@ -51,7 +51,7 @@ class FlutterSentryPlugin : FlutterPlugin, MethodCallHandler {
             val testLabSetting = Settings.System.getString(context.contentResolver,
                     "firebase.test.lab")
             firebaseTestLab = "true" == testLabSetting
-        }	        }
+        }
 
         channel = MethodChannel(messenger, "flutter_sentry")
         channel.setMethodCallHandler(this)
